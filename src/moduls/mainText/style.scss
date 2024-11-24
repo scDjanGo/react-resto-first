@@ -1,0 +1,60 @@
+.container-mainText {
+    margin: 150px 0;
+    width: 100%;
+    align-content: center;
+    overflow: hidden;
+
+    div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        span {
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+
+        .line {
+            margin-top: 32px;
+            margin-left: 20px;
+            width: 60px;
+            height: 3px;
+            background: #B59571;
+
+        }
+
+        ul {
+            margin-top: 84px;
+            transform: translateX(-100px);
+            list-style: none;
+            width: 200px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 64px;
+
+        }
+
+        p {
+            margin-top: 84px;
+            margin-right: 50px;
+            width: 560px;
+            font-weight: 400;
+            font-size: 18px;
+            font-family: 'Poppins';
+        }
+    }
+
+    .bottom {
+        transform: translateX(8px);
+
+        ul {
+            transform: translateX(-45px);
+        }
+
+        p {
+            margin-left: 75px;
+        }
+    }
+}

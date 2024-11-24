@@ -1,0 +1,49 @@
+.sidebar-outer {
+    position: relative;
+
+    .sidebar-container {
+        padding: 35px 20px;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+
+        .logos-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+
+            .sidebar-menu-button {
+                width: 40px;
+                cursor: pointer;
+            }
+        }
+
+        .sidebar-social {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .social {
+                width: 35px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar-outer {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+}

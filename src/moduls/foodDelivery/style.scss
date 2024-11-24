@@ -1,0 +1,129 @@
+.foodDelivery-container {
+    height: 0;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../../../public/Contact/map.png) center no-repeat;
+    background-size: cover;
+    transform: translateX(-100px) scale(0);
+    transition: all .2s ease-in-out;
+
+    .exit {
+        margin: 20px 20px 0 0 ;
+        padding: 0 20px;
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 28px;
+        border: none;
+        cursor: pointer;
+        background-color: #B59571;
+        transition: all .2s ease-in-out;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &:hover {
+            background-color: darken(#B59571, 20%);
+            transform: translateY(-5px);
+            box-shadow: 3px 3px 3px darken(#B59571, 20%);
+        }
+    }
+
+    
+    span {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .line {
+        width: 60px;
+        height: 5px;
+        background: #B59571;
+    }
+
+    h2 {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        border: 1px solid grey;
+        margin-top: 15px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        background-color: rgba(255, 255, 255, .3);
+
+        input {
+            text-align: center;
+            padding-left: 15px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 28px;
+            background-color: rgba(255, 255, 255, 0);
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+        
+        button {
+            padding: 5px 50px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 28px;
+            border: none;
+            cursor: pointer;
+            background-color: #B59571;
+            color: white;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: darken(#B59571, 20%);
+                transform: translateY(-5px);
+                box-shadow: 3px 3px 3px darken(#B59571, 20%);
+            }
+        }
+    }
+    
+    .buttons {
+        margin-top: 50px;
+        display: flex;
+        gap: 35px;
+
+         
+        button {
+            padding: 5px 50px;
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid grey;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+        
+    }
+}
+
+.foodDelivery-container.active {
+    transform: translateY(0) scale(1);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}

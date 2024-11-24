@@ -1,0 +1,246 @@
+.menu-container {
+    display: flex;
+
+    .sidebar {
+        width: 10vw;
+    }
+
+
+    .menu-content {
+        width: 90vw;
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .menu-header {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+            border-bottom: 1px solid grey;
+
+            .personal {
+                font-family: 'Poppins' sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+
+
+                &:hover {
+                    color: #B59571;
+                    transform: translateY(-2px);
+                }
+            }
+
+
+            img {
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    filter: drop-shadow(2px 2px 2px #B56571);
+                }
+            }
+
+            .countItems {
+                padding: 5px;
+                font-size: 15px;
+                border-radius: 50%;
+                transform: translateX(-36px) translateY(-10px);
+                background-color: red;
+            }
+
+            .countItems.empty {
+                background-color: white;
+            }
+        }
+
+
+        .navBar {
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 45px;
+
+            span {
+                font-family: 'Poppins' sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+                border-bottom: 3px solid white;
+            }
+
+            span:hover {
+                color: #B59571;
+                border-bottom: 3px solid #B59571;
+            }
+        }
+
+
+        .menu-carts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .cart {
+                max-width: 305px;
+                width: 100%;
+                height: 405px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid grey;
+                transition: all .2s ease-in-out;
+
+                .cart-info {
+                    padding: 40px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    p {
+                        text-align: center;
+                        font-family: 'Poppins' sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        span {
+                            text-align: center;
+                            font-family: 'Poppins' sans-serif;
+                            font-weight: 700;
+                            font-size: 32px;
+                        }
+
+                        button {
+                            padding: 10px 20px;
+                            text-align: center;
+                            font-family: 'Poppins' sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            background-color: #B59571;
+                            color: white;
+                            border: 0;
+                            transition: all .3s ease-in-out;
+                            cursor: pointer;
+                        }
+
+                        button:hover {
+                            background-color: darken(#B59571, 20%);
+                        }
+
+
+                        button:active {
+                            background-color: darken(#B59571, 30%);
+                        }
+                    }
+                }
+            }
+
+
+            .cart:hover {
+                box-shadow: 5px 5px 20px grey;
+                transform: translateY(-5px);
+            }
+
+
+            .empty-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                flex-direction: column;
+
+                div {
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 35px;
+                    box-shadow: 10px 5px 20px #B59571;
+                    background-color: rgba(128, 128, 128, 0);
+
+                    p {
+                        text-align: center;
+                        font-family: 'Poppins' sans-serif;
+                        font-size: 32px;
+                    }
+
+                    form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 35px;
+
+                        input {
+                            border: 0;
+                            text-align: center;
+                            font-family: 'Poppins' sans-serif;
+                            font-size: 32px;
+                            border-bottom: 1px solid grey;
+                        }
+
+                        button {
+                            padding: 10px 25px;
+                            text-align: center;
+                            font-family: 'Poppins' sans-serif;
+                            font-size: 18px;
+                            background-color: white;
+                            border: 1px solid grey;
+                            cursor: pointer;
+                            transition: all .2s ease-in-out;
+
+                            &:hover {
+                                box-shadow: 5px 5px 10px grey;
+                                transform: translateY(-3px);
+                            }
+
+                            &:active {
+                                background-color: darken(white, 20%);
+                            }
+                        }
+
+                    }
+                }
+
+                .youserComment {
+                    font-family: 'Poppins' sans-serif;
+                    font-size: 32px;
+                    border-bottom: 1px solid grey;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        .sidebar {
+            width: 100%;
+            height: 10vh;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}
+
+.menu-container.close {
+    display: none;
+}
